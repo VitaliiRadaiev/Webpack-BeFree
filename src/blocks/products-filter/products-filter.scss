@@ -1,0 +1,173 @@
+.products-filter {
+    @media (max-width: 1023px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 60px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        padding: 18px 20px;
+        font-size: 18px;
+        line-height: 1.2em;
+        color: $textColor;
+        transition: all .2s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &.active {
+            box-shadow: 0px 0px 43px -10px rgba(#000, 0.1);
+        }
+        
+    } 
+
+    @media (max-width: $md3+px) {
+        min-height: 50px;
+        padding: 15px;
+    }
+
+    &-wrap {
+        @media (max-width: 1023px) {
+            position: relative;
+            height: 60px;
+            z-index: 5;
+        } 
+
+        @media (max-width: $md3+px) {
+            height: 50px;
+        }
+    }
+    &__main {
+        position: relative;
+        width: 100%;
+
+        @media (max-width: 1023px) {
+           pointer-events: none;
+        }
+        
+        &:before {
+            position: absolute;
+            content: '';
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            display: inline-block;
+            border-top: .3em solid #B8B9D0;;
+            border-right: .3em solid transparent;
+            border-bottom: 0;
+            border-left: .3em solid transparent;
+
+            @media (min-width: 1024px) {
+                display: none;
+            }
+        }
+    }
+
+    &__list {
+        @media (max-width: 1023px) {
+            display: none;
+            margin-top: 15px;
+            & .products-filter__list-item {
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+    }
+
+    &__list-item {
+
+        @media (min-width: 1024px) {
+            margin-bottom: -2px;
+            display: flex;
+            background: transparent;
+            // box-shadow: 0px 0px 0px #FFFFFF, 0px 0px 0px #E9E9EC;
+            border-radius: 30px;
+            align-items: center;
+            min-height: 60px;
+            padding: 10px 20px;
+            font-size: 18px;
+            line-height: 1.2em;
+            color: $textColor;
+            transition: all .2s ease;
+    
+            @media (min-width: 992px) {
+                &:hover {
+                    background: $blue;
+                   // box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #E9E9EC;
+                    color: #fff;
+    
+                    & > span {
+                        & svg {
+                            stroke: #fff;
+                        }
+            
+                    }
+                }
+            }
+    
+            &.active {
+                background: $blue;
+                // box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #E9E9EC;
+                 color: #fff;
+    
+                 & > span {
+                     & svg {
+                         stroke: #fff;
+                     }
+         
+                 }
+            }
+    
+            & > span {
+                display: inline-flex;
+                min-width: 24px;
+                width: 24px;
+                height: 24px;
+                margin-right: 20px;
+    
+                & svg {
+                    width: 100%;
+                    height: auto;
+                    stroke: #B8B9D0;
+                }
+    
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media (max-width: 1023px) {
+            font-size: 18px;
+            line-height: 1.2em;
+            color: $textColor;
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            padding-right: 30px;
+
+            & > span {
+                display: inline-flex;
+                min-width: 24px;
+                width: 24px;
+                height: 24px;
+                margin-right: 20px;
+    
+                & svg {
+                    width: 100%;
+                    height: auto;
+                    stroke: #B8B9D0;
+                }
+    
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}

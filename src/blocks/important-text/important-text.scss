@@ -1,0 +1,29 @@
+.important-text {
+    background: linear-gradient(109.5deg, #EEEEF1 6.26%, #FFFFFF 93.74%);
+    box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #E9E9EC;
+    border-radius: 5px;
+    padding: 40px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.41em;
+    color: $turquoise;
+    margin-bottom: 60px;
+
+    @media (max-width: $md2+px) {
+        font-size: 22px;
+        padding: 30px;
+        margin-top: 30px;
+    }
+    @media (max-width: $md3+px) {
+        font-size: 20px;
+        padding: 20px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    @media (max-width: $md4+px) {
+        font-size: 18px;
+        padding: 15px;
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+}

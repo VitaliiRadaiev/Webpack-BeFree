@@ -1,0 +1,100 @@
+.cabinet-tabs {
+    @media (min-width: 768px) {
+        background: linear-gradient(109.5deg, #EEEEF1 6.26%, #FFFFFF 93.74%);
+        box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #E9E9EC;
+        border-radius: 30px;
+        display: flex;
+        padding: 0 20px;
+        margin-bottom: 60px;
+    }
+    
+    @media (max-width: $md3+px) {
+        margin-bottom: 60px;
+    }
+
+    &__item {
+        @media (min-width: 768px) {
+            flex: 0 1 33.3333%;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 60px;
+            position: relative;
+            font-size: 18px;
+            color: $textColor;
+            transition: all .2s ease;
+
+            @media (min-width: 992px) {
+                &:hover {
+                    color: $blue;
+
+                    &:before {
+                        width: 90%;
+                    }
+                }
+            }
+
+            &.active {
+                color: $blue;
+
+                &:before {
+                    width: 90%;
+                }
+            }
+
+            &:before {
+                position: absolute;
+                content: '';
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+                height: 2px;
+                background-color: $blue;
+                width: 0%;
+                transition: all .2s ease;
+            }
+
+            & > span {
+                display: none;
+            }
+        }
+
+        @media (max-width: $md3+px) {
+            background: linear-gradient(109.5deg, #EEEEF1 6.26%, #FFFFFF 93.74%);
+            box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #E9E9EC;
+            border-radius: 30px;
+            display: flex;
+            min-height: 50px;
+            padding: 10px 20px;
+            align-items: center;
+            color: $textColor;
+            font-size: 16px;
+            margin-bottom: 15px;
+
+            &.active {
+                color: $blue;
+            }
+
+            & > span {
+                &:first-child {
+                    flex: 0 0 20px;
+                    margin-right: 20px;
+                    & img {
+                        width: 100%;
+                    }
+                }
+
+                &:last-child {
+                    margin-left: auto;
+                    padding-left: 20px;
+                    width: 36px;
+
+                    & img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

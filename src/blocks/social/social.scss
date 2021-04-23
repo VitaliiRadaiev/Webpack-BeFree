@@ -1,0 +1,45 @@
+.social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+
+	&__link {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(104.98deg, #6266E0 0%, #7579FF 100%);
+		box-shadow: -12px -12px 24px #7D82FF, 12px 12px 24px #5D60D4;
+		height: 50px;
+		min-width: 50px;
+		border-radius: 50%;
+		transition: all .6s ease;
+
+		@media (min-width: 992px) {
+			&:hover {
+				box-shadow: -12px -12px 34px #ffffff, 12px 12px 24px #ffffff;
+			}
+		}
+
+		& > span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-width: 24px;
+			height: 24px;
+			& img {
+				max-width: 100%;
+				max-height: 100%;
+				object-fit: contain;
+				height: auto;
+				width: auto;
+				position: static;
+			}
+		}
+	}
+}

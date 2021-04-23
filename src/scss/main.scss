@@ -1,0 +1,220 @@
+@import "../bootstrap-4.5.3-dist/css/bootstrap.min.css";
+@import "mixins";
+@import "vendor";
+@import "vars";
+@import "../icomoon/style";
+@import './plagins/swiper-bundle.scss';
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html {
+	font-size: 10px;
+}
+html,
+body {
+	height: 100%;
+	min-width: $minwidth;
+	margin: 0 auto;
+}
+body {
+	line-height: 1;
+	font-family: $mainFontFamily;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: $textColor;
+	font-size: 1.8rem;
+	background-color:  #F5F5F8;
+	opacity: 0;
+	transition: opacity .8s ease;
+
+
+	@media (max-width: $md3+px) {
+		font-size: 1.6rem;
+	}
+	@media (max-width: $md4+px) {
+		font-size: 1.4rem;
+	}
+
+	&.lock {
+		overflow: hidden;
+	}
+
+	&.is-load {
+		opacity: 1;
+	}
+
+}
+
+input,
+button,
+textarea {
+	font-family: $mainFontFamily;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+	margin-top: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+
+	&.loaded {
+	}
+}
+
+.page {
+	flex: 1 1 auto;
+}
+
+
+.container {
+	max-width: 1284px;
+	margin: 0 auto;
+	padding: 0 22px;
+
+	@media (max-width: $md4+px) {
+		padding: 0 17px;
+	}
+}
+
+.ibg {
+	position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+
+
+
+
+// ==== PAGES =====================================================
+@import "./pages/coming-soon";
+@import "./pages/page-404";
+@import "./pages/store-card";
+@import "./pages/text-page";
+// ==== AND PAGES =====================================================
+
+
+// ==== BLOCKS =====================================================
+@import "../blocks/header/header";
+@import "../blocks/buttons/buttons";
+@import "../blocks/languages/languages";
+@import "../blocks/dropdown/dropdown";
+@import "../blocks/titles/titles";
+@import "../blocks/sliders/sliders";
+@import "../blocks/pagination/pagination";
+@import "../blocks/forms/forms";
+@import "../blocks/text-content/text-content";
+@import "../blocks/social/social";
+@import "../blocks/breadcrumb/breadcrumb";
+@import "../blocks/burger/burger";
+@import "../blocks/cookie-message/cookie-message";
+@import "../blocks/footer/footer";
+@import "../blocks/hero/hero";
+@import "../blocks/info-block/info-block";
+@import "../blocks/popup/popup";
+@import "../blocks/rating/rating";
+@import "../blocks/shares-block/shares-block";
+@import "../blocks/tabs-block/tabs-block";
+@import "../blocks/promo-header/promo-header";
+@import "../blocks/home-map/home-map";
+@import "../blocks/category-page-text/category-page-text";
+@import "../blocks/products/products";
+@import "../blocks/products-filter/products-filter";
+@import "../blocks/products-list/products-list";
+@import "../blocks/card-product/card-product";
+@import "../blocks/category-header/category-header";
+@import "../blocks/promo-header-search/promo-header-search";
+@import "../blocks/header-sort/header-sort";
+@import "../blocks/selects/selects";
+@import "../blocks/radio_checkbox/radio_checkbox";
+@import "../blocks/brand-card/brand-card";
+@import "../blocks/shares-card/shares-card";
+@import "../blocks/reviews-list/reviews-list";
+@import "../blocks/form-message-block/form-message-block";
+@import "../blocks/cabinet/cabinet";
+@import "../blocks/cabinet-tabs/cabinet-tabs";
+@import "../blocks/entity-block/entity-block";
+@import "../blocks/entity-list/entity-list";
+@import "../blocks/entity-form/entity-form";
+@import "../blocks/text-img-block/text-img-block";
+@import "../blocks/important-text/important-text";
+@import "../blocks/quote/quote";
+@import "../blocks/author-block/author-block";
+@import "../blocks/box/box";
+// ==== AND BLOCKS =====================================================

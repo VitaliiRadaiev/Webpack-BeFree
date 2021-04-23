@@ -1,0 +1,24 @@
+.category-page-text {
+    margin-bottom: 126px;
+
+    & ._toggleBtn {
+        display: none;
+    }
+
+    @media (max-width: $md2+px) {
+        & ._toggleWrap {
+            display: none;
+            margin-bottom: 15px;
+        }
+
+        & ._toggleBtn {
+            color: #B8B9D0;
+            font-size: 14px;
+            display: block;
+        }
+    }
+    @media (max-width: $md3+px) {
+        margin-bottom: 66px;
+    }
+
+}

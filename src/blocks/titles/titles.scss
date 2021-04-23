@@ -1,0 +1,68 @@
+.title-1 {
+	font-weight: 500;
+	font-size: 70px;
+	line-height: 1.143em;
+
+	@media (max-width: $md2+px) {
+		font-size: 40px;
+	}
+	@media (max-width: $md3+px) {
+		font-size: 34px;
+	}
+	@media (max-width: $md4+px) {
+		font-size: 26px;
+	}
+}
+.title-2 {
+	font-weight: 500;
+	font-size: 50px;
+	line-height: 1.18em;
+
+	@media (max-width: $md2+px) {
+		font-size: 40px;
+	}
+	@media (max-width: $md3+px) {
+		font-size: 34px;
+	}
+	@media (max-width: $md4+px) {
+		font-size: 26px;
+	}
+}
+
+.title-3 {
+    font-weight: 500;
+	font-size: 42px;
+	line-height: 1.18em;
+
+	@media (max-width: $md2+px) {
+		font-size: 32px;
+	}
+	@media (max-width: $md3+px) {
+		font-size: 28px;
+	}
+}
+
+.title-4 {
+    font-weight: 500;
+	font-size: 36px;
+	line-height: 1.18em;
+
+	@media (max-width: $md2+px) {
+		font-size: 30px;
+	}
+	@media (max-width: $md3+px) {
+		font-size: 24px;
+	}
+}
+
+.title-5 {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.416em;
+}
+.title-6 {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.555em;
+
+}

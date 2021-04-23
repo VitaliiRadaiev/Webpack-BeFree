@@ -1,0 +1,10 @@
+.shares-block {
+    @media (max-width: $md3+px) {
+        margin-bottom: 40px;
+    }
+    &__btn-show-more {
+        @media (min-width: 992px) {
+            display: none !important;
+        }
+    }
+}

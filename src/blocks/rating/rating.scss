@@ -1,0 +1,123 @@
+//<RATING>====================================================================================================
+.rating-block {
+    display: flex;
+	align-items: center;
+
+	&._medium {
+		@media (min-width: 768px) {
+			& .rating-wrap {
+				width: 100px;
+				height: 19px;
+			}
+	
+			& .rating__line {
+				font-size: 20px;
+				height: 19px;
+	
+				& > span {
+					margin-right: 0px;
+				}
+			}
+	
+			& .rating__activeline {
+				font-size: 20px;
+				height: 19px;
+				& > span {
+					margin-right: 0px;
+				}
+			}
+	
+			& .rating .star {
+				width: 18px;
+				height: 19px;
+			}
+		}
+	}
+
+	&._big {
+		& .rating-wrap {
+			width: 150px;
+			height: 25px;
+		}
+
+		& .rating__line {
+			font-size: 26px;
+			height: 25px;
+
+			& > span {
+				margin-right: 5px;
+			}
+
+		}
+
+		& .rating__activeline {
+			font-size: 26px;
+			height: 25px;
+
+			& > span {
+				margin-right: 5px;
+			}
+		}
+
+		& .rating .star {
+			width: 30px;
+			height: 25px;
+		}
+	}
+}
+.rating-wrap{
+	display: table;font-size: 0; width: 78px;
+	height: 14px;
+}
+.rating{
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	width: 100%;
+	height: 14px;
+	&.edit .star{cursor: pointer;}
+	& .stars {
+		display: flex;
+	}
+	.star{width: 16px;height: 14px;display: inline-block;position: relative;z-index: 3; 
+
+	}
+}
+.rating__line{
+	position: absolute;
+	width: auto;
+	height: 14px;
+	top: 0;left: 0;
+	//background: url('../img/icons/Star-empty.svg') 0 0 no-repeat;
+	z-index: 1;
+	background-size:80px 100%;
+	display: flex;
+	font-size: 14px;
+	color: rgba($blue, 0.4);
+	& > span {
+		margin-right: 2px;
+	}
+}
+.rating__activeline{
+	position: absolute;
+	width: 0px;
+	height: 14px;
+	top: 0;left: 0;
+	//background: url('../img/icons/Star-full.svg') 0 0 no-repeat;
+	z-index: 2;
+	background-size:136px 100%;
+	display: flex;
+	font-size: 14px;
+	overflow: hidden;
+	color: $blue;
+	& > span {
+		margin-right: 2px;
+	}
+}
+.rating-value{
+    margin-left: 5px;
+    font-size: 16px;
+    line-height: 170%;
+    color: $textColor;
+}
+//</RATING>====================================================================================================

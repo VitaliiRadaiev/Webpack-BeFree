@@ -1,0 +1,40 @@
+.reviews-list {
+    margin-bottom: 38px;
+
+    @media (max-width: $md4+px) {
+        margin-bottom: 30px;
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-bottom: 34px;
+        }
+    }
+
+    &__rating {
+        margin-bottom: 8px;
+
+        @media (max-width: $md2+px) {
+            margin-bottom: 6px;
+        }
+
+        @media (max-width: $md4+px) {
+            margin-bottom: 4px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 15px;
+    }
+
+    &__bottm {
+        font-size: 14px;
+        line-height: 1.21em;
+        color: $gray;
+
+        & > span {
+            margin: 0 10px;
+        }
+    }
+}
