@@ -21,6 +21,7 @@ import '../cabinet-password-480.html';
 import '../text-page.html';
 import '../page-404.html';
 import '../coming-soon.html';
+import '../common-page.html';
 // == and pages ======================
 
 // == plagins ===================

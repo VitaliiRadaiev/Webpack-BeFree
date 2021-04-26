@@ -1,13 +1,13 @@
 .promo-header-search {
     margin-bottom: 10px !important;
+    color: $gray;
 
     @media (max-width: $md4+px) {
         display: block;
         margin-bottom: 40px !important;
     }
     &__input {
-        background: rgba(#fff, 0.1);
-        box-shadow: -12px 3px 24px #7D82FF, 12px 12px 24px #5D60D4;
+        background: rgba(#fff, 1);
         border-radius: 30px !important;
         display: flex;
         align-items: center;
@@ -18,7 +18,7 @@
         font-weight: normal;
         font-size: 18px;
         line-height:1.1em;
-        color: #FFFFFF;
+        color: inherit;
         transition: all .2s ease;
         margin-right: 20px;
 
@@ -36,7 +36,7 @@
         &::placeholder {
             font-size: 18px;
             line-height:1.1em;
-            color: #FFFFFF;
+            color: inherit;
         }
 
         &:focus {
@@ -44,7 +44,7 @@
             border: 1px solid rgba(#fff, 0.4);
             font-size: 18px;
             line-height:1.1em;
-            color: #FFFFFF;
+            color: inherit;
         }
 
         @media (min-width: 992px) {

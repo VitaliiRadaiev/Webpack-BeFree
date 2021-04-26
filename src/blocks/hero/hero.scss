@@ -95,6 +95,12 @@
 
     & .promo-header-search {
         margin-bottom: 20px !important;
+        color: #fff;
+
+        & .promo-header-search__input {
+            box-shadow: -12px 3px 24px #7D82FF, 12px 12px 24px #5D60D4;
+            background: rgba(#fff, 0.1);
+        }
     }
 }
 

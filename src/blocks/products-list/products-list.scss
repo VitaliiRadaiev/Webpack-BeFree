@@ -8,6 +8,10 @@
         flex: 0 1 25%;
         margin-bottom: 55px;
 
+        & > * {
+            height: 100%;
+        }
+
         @media (max-width: $md2+px) {
             flex: 0 1 33.333%;
         }

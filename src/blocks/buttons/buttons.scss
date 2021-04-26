@@ -13,7 +13,7 @@
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
-		padding: 0 10px;
+		padding: 0 20px;
 		border: 2px solid $blue;
 		border-radius: 20px;
 		transition:  all .2s ease;
@@ -40,6 +40,7 @@
 		}
 
 		& .plus {
+			margin-right: 10px;
 			&:before, &:after {
 				background-color: $blue;
 				transition: all .2s ease;
