@@ -159,6 +159,138 @@ textarea {
 	}
 }
 
+.blue-bg {
+	& .link {
+		color: inherit;
+	}
+
+	& .checkbox-wrap {
+		& .checkbox-wrap__label {
+			&:before {
+				background-color: rgba(#fff, 0.1);
+			}
+		}
+	}
+
+	& .radio-wrap {
+		& .radio-wrap__label {
+			&:before {
+				background-color: rgba(#fff, 0.1);
+			}
+		}
+	}
+	
+	& .input {
+		background-color: rgba(#fff, 0.1);
+		color: #fff;
+
+		@media (min-width: 992px) {
+			&:hover {
+				background-color: #fff;
+				color: $gray;
+				&::placeholder {
+					color: $gray;
+				}
+			}
+		}
+
+		&:focus {
+			background-color: #fff;
+			color: $textColor;
+		}
+
+		&::placeholder {
+			color: #fff;
+		}
+	}
+
+	& .textarea {
+		background-color: rgba(#fff, 0.1);
+		color: #fff;
+
+		@media (min-width: 992px) {
+			&:hover {
+				background-color: #fff;
+				color: $gray;
+				&::placeholder {
+					color: $gray;
+				}
+			}
+		}
+
+		&:focus {
+			background-color: #fff;
+			color: $textColor;
+		}
+
+		&::placeholder {
+			color: #fff;
+		}
+	}
+
+	& .main-select {
+		&._notselected {
+			& .select__title {
+				& .select__value > span {
+					color: $gray;
+				}
+			}
+		}
+
+		&._active {
+			& .select__title {
+				background: #fff;
+
+				& .select__value  {
+					& > span {
+						color: $textColor;
+					}
+				}
+			}
+
+			& .select__option {
+				color: $textColor;
+
+				@media (min-width: 992px) {
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		& .select__title {
+			background: rgba(#fff, 0.1);
+			
+			& .select__value > span {
+				color: #fff;
+			}
+
+			@media (min-width: 992px) {
+				&:hover {
+					background: #fff;
+					
+
+					& .select__value > span  {
+						color: $gray;
+					}
+
+					& .icon-select-arrow {
+						&:before {
+							border-top: 0.3em solid $hover;
+						}
+					}
+				}
+			}
+		}
+
+		& .icon-select-arrow {
+			&:before {
+				border-top: 0.3em solid #fff;
+			}
+		}
+	}
+}
 
 
 

@@ -3,6 +3,16 @@
 	align-items: center;
 	justify-content: center;
 
+	&.icons-left {
+		justify-content: flex-start;
+	}
+	&.icons-center {
+		justify-content: center;
+	}
+	&.icons-right {
+		justify-content: flex-end;
+	}
+
 	&__item {
 		&:not(:last-child) {
 			margin-right: 20px;
@@ -22,7 +32,23 @@
 
 		@media (min-width: 992px) {
 			&:hover {
-				box-shadow: -12px -12px 34px #ffffff, 12px 12px 24px #ffffff;
+				background: $hover;
+
+				& svg {
+					& path {
+						fill: $blue;
+					}
+				}
+			}
+		}
+
+		&:active {
+			background: $active;
+
+			& svg {
+				& path {
+					fill: #fff;
+				}
 			}
 		}
 
@@ -39,6 +65,13 @@
 				height: auto;
 				width: auto;
 				position: static;
+			}
+
+			& svg {
+				& path {
+					transition: all .2s ease;
+					fill: $hover;
+				}
 			}
 		}
 	}

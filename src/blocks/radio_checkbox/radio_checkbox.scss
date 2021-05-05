@@ -2,6 +2,11 @@
 .radio-wrap {
 	margin-bottom: 14px;
 
+    &.disabled {
+        color: $disable;
+    }
+
+
     &__radio {
         display: none;
 
@@ -13,6 +18,7 @@
 					background-size: 80%;
 					background-repeat: no-repeat;
 					background-position: center;
+                    border-color: #2FFF6A;;
 				}
             }
         }
@@ -50,6 +56,15 @@
 			//box-shadow: -12px -12px 24px #7D82FF, 12px 12px 24px #5D60D4;
 			border-radius: 4px;
 			transition: all .2s ease;
+            border: 2px solid transparent;
+        }
+
+        @media (min-width: 992px) {
+            &:hover {
+                &:before {
+                    border: 2px solid $hover;
+                }
+            }
         }
 
     }
@@ -59,6 +74,9 @@
 // //<CHECK (chk+tab)>====================================================================================================
 .checkbox-wrap {
 	margin-bottom: 14px;
+    &.disabled {
+        color: $disable;
+    }
     & .checkbox {
         display: none;
 
@@ -71,6 +89,7 @@
 					background-size: 80%;
 					background-repeat: no-repeat;
 					background-position: center;
+                    border-color: #2FFF6A;
                 }
             }
         }
@@ -105,10 +124,20 @@
             height: 24px;
 			width: 24px;
 			background: rgba(#fff, 1);
-			//box-shadow: -12px -12px 24px #7D82FF, 12px 12px 24px #5D60D4;
 			border-radius: 4px;
 			transition: all .2s ease;
+            border: 2px solid transparent;
         } 
+
+        @media (min-width: 992px) {
+            &:hover {
+
+                &:before {
+                    border: 2px solid $hover;
+                }
+                
+            }
+        }
     }
 }
 // //</CHECK>====================================================================================================

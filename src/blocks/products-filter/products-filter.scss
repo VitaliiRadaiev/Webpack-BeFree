@@ -80,62 +80,81 @@
     &__list-item {
 
         @media (min-width: 1024px) {
-            margin-bottom: -2px;
             display: flex;
-            background: transparent;
-            // box-shadow: 0px 0px 0px #FFFFFF, 0px 0px 0px #E9E9EC;
-            border-radius: 30px;
             align-items: center;
+            background: transparent;
+            box-shadow:  0px  0px 0px #FFFFFF, 0px 0px 0px #E9E9EC;
+            border-radius: 30px;
+            color: $textColor;
             min-height: 60px;
             padding: 10px 20px;
             font-size: 18px;
             line-height: 1.2em;
-            color: $textColor;
+            position: relative;
             transition: all .2s ease;
     
             @media (min-width: 992px) {
                 &:hover {
-                    background: $blue;
-                   // box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #E9E9EC;
-                    color: #fff;
+                    color: $hover;
     
                     & > span {
                         & svg {
-                            stroke: #fff;
+                            stroke:  $hover;
                         }
-            
+                    }
+                }
+            }
+
+            &:active {
+                color: $active;
+    
+                & > span {
+                    & svg {
+                        stroke:  $active;
                     }
                 }
             }
     
             &.active {
-                background: $blue;
-                // box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #E9E9EC;
-                 color: #fff;
+                @media (min-width: 992px) {
+                    background: $blue;
+                    box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #E9E9EC;
+                    color: #fff;
+        
+                    & > span {
+                        & svg {
+                            stroke: #fff;
+                        }
+                    }
+                }
     
-                 & > span {
-                     & svg {
-                         stroke: #fff;
-                     }
-         
-                 }
+                @media (max-width: $md2+px) {
+                    color: $blue;
+                    & > span {
+                        & svg {
+                            stroke: $gray;
+                        }
+                    }
+    
+                    & .plus {
+                        &::before {
+                            height: 0;
+                        }   
+                    }
+    
+                }    
             }
-    
+            
             & > span {
-                display: inline-flex;
-                min-width: 24px;
-                width: 24px;
+                flex: 0 0 24px;
                 height: 24px;
                 margin-right: 20px;
     
                 & svg {
                     width: 100%;
                     height: auto;
-                    stroke: #B8B9D0;
-                }
-    
-                & img {
-                    width: 100%;
+                    stroke: $gray;
+                    transition: all .2s ease;
                 }
             }
         }

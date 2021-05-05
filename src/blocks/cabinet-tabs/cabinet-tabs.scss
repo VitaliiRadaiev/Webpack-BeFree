@@ -24,18 +24,23 @@
             font-size: 18px;
             color: $textColor;
             transition: all .2s ease;
+            border-radius: 99px;
 
             @media (min-width: 992px) {
                 &:hover {
-                    color: $blue;
-
-                    &:before {
-                        width: 90%;
-                    }
+                    background: #FFFFFF;
                 }
             }
 
             &.active {
+                color: $blue;
+
+                &:before {
+                    width: 90%;
+                }
+            }
+
+            &:active {
                 color: $blue;
 
                 &:before {

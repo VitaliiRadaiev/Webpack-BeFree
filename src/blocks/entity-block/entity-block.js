@@ -3,28 +3,6 @@ import {_slideUp, _slideToggle} from '../../js/function';
 export function entityBlockHandler() {
     let entityList = document.querySelector('.entity-list');
     if(entityList) {
-        let remeberItem;
-        entityList.addEventListener('mousemove', () => {
-            if(document.documentElement.clientWidth > 991) {
-                let items = entityList.querySelectorAll('.entity-list__triggers');
-                items.forEach(item => {
-                    if(item.classList.contains('active')) {
-                        remeberItem = item;
-                        item.classList.remove('active');
-                    }
-                })
-            }
-
-        })
-
-        entityList.addEventListener('mouseleave', () => {
-            if(document.documentElement.clientWidth > 991) {
-                if(remeberItem) {
-                    remeberItem.classList.add('active');
-                }
-            }
-        })
-
         let entityItems = entityList.querySelectorAll('.entity-list__triggers');
         entityItems.forEach((item) => {
             item.addEventListener('click', function(e) {

@@ -11,8 +11,8 @@
             z-index: 2;
             display: flex;
             align-items: center;
-            background: linear-gradient(109.5deg, #EEEEF1 6.26%, #FFFFFF 93.74%);
-            box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #E9E9EC;
+            background: #EEEEF1;
+            box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #fff;
             border-radius: 30px;
             min-height: 60px;
             margin-bottom: 40px;
@@ -25,6 +25,7 @@
     }
 
     &__head-item {
+        transition: all .2s ease;
         @media (min-width: 768px) {
            flex: 1 1 auto;
            padding: 0 10px;
@@ -40,6 +41,13 @@
 
         @media (max-width: $md3+px) {
             margin-bottom: 20px;
+        }
+
+        @media (min-width: 992px) {
+            &:hover {
+                background-color: #fff;
+                border-radius: 99px;
+            }
         }
     }
 
@@ -57,16 +65,6 @@
             color: $textColor;
             transition: all .2s ease;
 
-            @media (min-width: 992px) {
-                &:hover {
-                    color: $blue;
-
-                    &:before {
-                        width: 80%;
-                    }
-                }
-            }
-
             &.active {
                 color: $blue;
 
@@ -74,6 +72,7 @@
                     width: 80%;
                 }
             }
+
 
             & > span {
                 pointer-events: none;

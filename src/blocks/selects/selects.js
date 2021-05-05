@@ -38,7 +38,7 @@ function select_init(select) {
 	select.setAttribute('data-default', select_selected_option.value);
 	select.style.display = 'none';
 
-	select_parent.insertAdjacentHTML('beforeend', '<div class="select select_' + select_modifikator + '"></div>');
+	select_parent.insertAdjacentHTML('beforeend', '<div class="select _notselected select_' + select_modifikator + '"></div>');
 
 	let new_select = select.parentElement.querySelector('.select');
 	new_select.appendChild(select);
@@ -78,7 +78,9 @@ function select_actions(original, select) {
 	const select_type = original.getAttribute('data-type');
 	const select_input = select.querySelector('.select__input');
 
+	
 	select_item.addEventListener('click', function () {
+
 		let selects = document.querySelectorAll('.select');
 		for (let index = 0; index < selects.length; index++) {
 			const select = selects[index];
@@ -105,6 +107,7 @@ function select_actions(original, select) {
 			}
 		}
 		select_option.addEventListener('click', function () {
+			select.classList.remove('_notselected');
 			for (let index = 0; index < select_options.length; index++) {
 				const el = select_options[index];
 				el.style.display = 'block';

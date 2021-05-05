@@ -14,6 +14,18 @@
                 margin-bottom: 20px;
             }
         }
+
+        &:active {
+            & .entity-list__triggers {
+                color: $active;
+
+                & > span {
+                    & svg {
+                        stroke: $active;
+                    }
+                }
+            }
+        }
         
     }
 
@@ -29,6 +41,7 @@
         font-size: 18px;
         line-height: 1.2em;
         position: relative;
+        transition: all .2s ease;
 
         @media (max-width: $md2+px) {
             background: linear-gradient(109.5deg, #EEEEF1 6.26%, #FFFFFF 93.74%);
@@ -39,13 +52,11 @@
 
         @media (min-width: 992px) {
             &:hover {
-                background: $blue;
-                box-shadow: -12px -12px 24px #FFFFFF, 12px 12px 24px #E9E9EC;
-                color: #fff;
+                color: $hover;
 
                 & > span {
                     & svg {
-                        stroke: #fff;
+                        stroke:  $hover;
                     }
                 }
             }
@@ -90,6 +101,7 @@
                 width: 100%;
                 height: auto;
                 stroke: $gray;
+                transition: all .2s ease;
             }
         }
 

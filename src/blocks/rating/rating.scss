@@ -88,7 +88,6 @@
 	width: auto;
 	height: 14px;
 	top: 0;left: 0;
-	//background: url('../img/icons/Star-empty.svg') 0 0 no-repeat;
 	z-index: 1;
 	background-size:80px 100%;
 	display: flex;
@@ -97,6 +96,11 @@
 	& > span {
 		margin-right: 2px;
 	}
+
+	& .icon-star-full._hover {
+		color: $hover;
+	}
+
 }
 .rating__activeline{
 	position: absolute;
