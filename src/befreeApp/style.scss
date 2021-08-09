@@ -1,0 +1,21 @@
+.wrapper.home-app {
+    height: 100%;
+    overflow: auto;
+
+    & main.page{
+        height: 100%;
+    }
+}
+
+
+// == components =========
+@import "./components/header/header-v2.scss";
+@import "./components/buttons/buttons.scss";
+@import "./components/burger/burger.scss";
+// == // components =========
+
+
+
+.home-app-map {
+    height: 100%;
+}

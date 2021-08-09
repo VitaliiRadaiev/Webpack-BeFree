@@ -3,8 +3,8 @@
 	transition: all .2s ease;
 
 	& .burger {
-		width: 42px;
-		height: 36px;
+		width: 24px;
+		height: 24px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -14,23 +14,23 @@
 	}
 
 	& .burger span {
-		width: 22px;
+		width: 18px;
 		height: 2px;
 		display: block;
 		background: $blue;
 		position: absolute;
 		transition: all 0.2s;
 		border-radius: 25%;
+		left: 3px;
 	}
 
 	& .burger span:nth-child(1) {
-		top:11px;
-		right: 10px;
+		top:5px;
+		
 	}
 
 	& .burger span:nth-child(4) {
-		bottom:11px;
-		left: 10px;
+		bottom:5px;
 	}
 
 	.second {

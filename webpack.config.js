@@ -143,6 +143,13 @@ const plugins = () => {
         collapseWhitespace: isProd
       }
     }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/befreeApp/app.html'),
+      filename: 'app.html',
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: `./css/${filename('css')}`

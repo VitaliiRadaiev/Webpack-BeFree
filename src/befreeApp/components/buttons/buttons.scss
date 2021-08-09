@@ -1,0 +1,465 @@
+.button {
+	&.width-100 {
+		width: 100%;
+	}
+
+	&.btn-outline-primary {
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 1.1666em;
+		color: $textColor;
+		min-width: 111px;
+		min-height: 50px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 20px;
+		border: 2px solid $blue;
+		border-radius: 50px;
+		transition:  all .2s ease;
+
+		@media (max-width: $md3+px) {
+			height: 46px;
+		}
+
+		@media (max-width: $md4+px) {
+			font-size: 14px;
+		}
+
+		@media (min-width: 992px) {
+			&:hover {
+				border-color: $hover;
+				background-color: transparent;
+				& .plus {
+					&:before, &:after {
+						background-color: $hover
+					
+					}
+				}
+			}
+		}
+
+		&:active {
+			border-color: $active !important;
+			background-color: transparent !important;
+			color: $active !important;
+
+			& .plus {
+				&:before, &:after {
+					background-color: $active;
+				
+				}
+			}
+		}
+
+		&.disabled {
+			border-color: $disable;
+			color: $disable;
+
+			& .plus {
+				&:before, &:after {
+					background-color: $disable;
+				
+				}
+			}
+		}
+
+
+
+		& .plus {
+			margin-right: 10px;
+			&:before, &:after {
+				background-color: $blue;
+				transition: all .2s ease;
+			}
+		}
+	}
+
+	&.btn-green {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.1em;
+		text-transform: uppercase;
+		color: $blue;
+		min-width: 134px;
+		height: 60px;
+		background: linear-gradient(180deg, #5CDEDA 0%, #62c0ff 100%);
+		border-radius: 30px !important;
+		padding: 4px;
+		transition: all .2s ease;
+		overflow: hidden;
+		align-self: normal;
+		position: relative;
+		transition: all .2s ease;
+		@media (max-width: $md3+px) {
+			height: 50px;
+		}
+
+		@media (max-width: $md4+px) {
+			font-size: 14px;
+		}
+
+		& > span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: linear-gradient(180deg, #5CDEDA 0%, #2FFF6A 100%);
+			border-radius: 30px !important;
+			height: 100%;
+			width: 100%;
+			transition: all .2s ease;
+			padding: 10px 15px;
+
+			&:before {
+				position: absolute;
+				content: '';
+				top: 0;
+				left: -60px;
+				width: 50px;
+				height: 100%;
+				transition: all .5s ease;
+				background-color: rgba(#fff, 0.4);
+				transform: skew(15deg);
+			}
+		}
+
+		@media (min-width: 992px) {
+			&:hover {
+				background: linear-gradient(180deg, #57D5FF  0%, #67F581 100%);
+				& > span {
+					background: linear-gradient(180deg, #67F581 0%, #57D5FF 100%);
+					&:before {
+						left: 120%;
+					}
+				}
+			}
+		}
+
+		&:active {
+			background: $active;
+
+			& > span {
+				background: $active;
+				color: #fff;
+			}
+		}
+
+		&.disabled {
+			background: $disable;
+
+			& > span {
+				background: $disable;
+				color: #fff;
+			}
+		}
+	}
+	
+}
+
+
+// .header-bottom-btn {
+// 	height: 90px;
+// 	width: 90px;
+// 	display: inline-flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	background-color: $blue;
+// 	border-radius: 50%;
+// 	cursor: pointer;
+
+// 	@media (min-width: 992px) {
+// 		&:hover {
+// 			& > span {
+// 				box-shadow: 0px 12px 12px #8386e0;
+// 			}
+// 		}
+// 	}
+	
+// 	& > span {
+// 		display: flex;
+// 		justify-content: center;
+// 		align-items: center;
+// 		min-width: 60px;
+// 		height: 60px;
+// 		background: #6D71F9;
+// 		box-shadow: 0px 12px 12px #5D60D4;
+// 		border-radius: 50%;
+// 		transition: all .2s ease;
+// 		& img {
+// 			max-width: 100%;
+// 			max-height: 100%;
+// 			object-fit: contain;
+// 			height: auto;
+// 			width: auto;
+// 			position: static;
+// 		}
+// 	}
+// }
+
+.plus {
+	display: inline-block;
+	position: relative;
+	font-size: 10px;
+	height: 1.4em;
+	min-width: 1.4em;
+
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 100%;
+		width: 2px;
+		border-radius: 25%;
+		background-color: $turquoise;
+		transition: all .2s ease;
+	}
+
+	&:after {
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 2px;
+		width: 100%;
+		border-radius: 25%;
+		background-color: $turquoise;
+	}
+}
+
+// .read-more {
+//     font-size: 14px;
+//     line-height: 1.714em;
+//     color: $gray;
+// }
+
+// .btn-add-entity {
+//     display: flex;
+//     min-height: 40px;
+//     border-radius: 30px;
+//     align-items: center;
+//     padding: 2px 25px;
+//     color: $blue;
+//     font-size: 18px;
+//     transition: all .2s ease;
+
+//     @media (max-width: $md2+px) {
+//         border: 2px solid $blue;
+//         color: $textColor;
+//         justify-content: center;
+//         position: relative;
+//     }
+
+//     @media (min-width: 992px) {
+//         &:hover {
+//             background: rgba($blue, 0.1);
+//         }
+//     }
+
+//     & > .plus {
+//         margin-right: 25px;
+
+//         @media (max-width: $md2+px) {
+//             position: absolute;
+//             top: 50%;
+//             left: 30px;
+//             transform: translateY(-50%);
+//         }
+
+//         &::before, &::after {
+//             background-color: $blue;
+//         }
+//     }
+// }
+
+// .btn-delete {
+//     display: inline-block;
+//     flex: 0 0 auto;
+//     padding: 5px;
+//     transition: all .2s ease;
+
+//     @media (min-width: 992px) {
+//         &:hover {
+//             background-color: rgba($blue, 0.1);
+//         }
+//     }
+
+//     & > span {
+//         display: block;
+//         position: relative;
+//         height: 14px;
+//         width: 14px;
+
+//         &:before {
+//             position: absolute;
+//             content: '';
+//             top: 0;
+//             left: 50%;
+//             transform: translateX(-50%) rotate(45deg);
+//             width: 2px;
+//             height: 100%;
+//             background-color: $blue;
+//         }
+//         &:after {
+//             position: absolute;
+//             content: '';
+//             top: 0;
+//             left: 50%;
+//             transform: translateX(-50%) rotate(-45deg);
+//             width: 2px;
+//             height: 100%;
+//             background-color: $blue;
+//         }
+//     }
+// }
+
+// .btn-add {
+//     display: inline-flex;
+//     padding: 5px 10px;
+//     align-items: center;
+//     font-size: 18px;
+//     color: $blue;
+//     border-radius: 30px;
+//     transition: all .2s ease;
+//     @media (min-width: 992px) {
+//         &:hover {
+//             background-color: rgba($blue, 0.1);
+//         }
+//     }
+//     & .plus {
+//         margin-right: 24px;
+//         &:before, &:after {
+//             background-color: $blue;
+//         }
+//     }
+// }
+
+// .photo-add-btn {
+	
+// 	& label {
+// 		display: inline-flex;
+// 		border: 2px solid $blue;
+// 		border-radius: 5px;
+// 		flex-direction: column;
+// 		justify-content: center;
+// 		align-items: center;
+// 		padding: 15px;
+// 		text-align: center;
+// 		font-size: 18px;
+// 		line-height: 1.2em;
+// 		transition: all .2s ease;
+// 		cursor: pointer;
+// 		height: 100%;
+// 		min-height: 114px;
+// 		width: 100%;
+// 		max-width: 190px;
+
+// 		& .plus {
+// 			margin-bottom: 10px;
+// 			&:before, &:after {
+// 				background-color: $blue;
+// 			}
+// 		}
+
+// 		@media (min-width: 992px) {
+// 			&:hover {
+// 				background-color: transparent;
+// 				border-color: $hover;
+// 				& .plus {
+// 					&:before, &:after {
+// 						background-color: $hover;
+// 					}
+// 				}
+// 			}
+// 		}
+
+// 		&:active {
+// 			background-color: transparent;
+// 			border-color: $active;
+// 			color: $active;
+// 			& .plus {
+// 				&:before, &:after {
+// 					background-color: $active;
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	& input[type='file'] {
+// 		display: none;
+// 	}
+// }
+
+// .btn-arrow {
+// 	display: inline-flex;
+// 	height: 40px;
+// 	width: 40px;
+// 	cursor: pointer;
+
+// 	& svg {
+// 		width: 100%;
+
+// 		& path {
+// 			transition: all .2s ease;
+// 		}
+// 	}
+
+// 	@media (min-width: 992px) {
+// 		&:hover {
+// 			& svg path {
+// 				fill: $hover;
+// 			}
+// 		}
+// 	}
+
+// 	&:active {
+// 		& svg path {
+// 			fill: $active
+// 		}
+// 	}
+
+// 	&.disabled {
+// 		& svg path {
+// 			fill: $disable;
+// 		}
+// 	}
+// }
+
+.link {
+	font-size: 1em;
+	color: $blue;
+	transition: all .2s ease;
+
+	@media (min-width: 992px) {
+		&:hover {
+			color: $hover !important;
+		}
+	}
+
+	&:active {
+		color: $active !important;
+	}
+
+	&.link_sm {
+		font-size: 0.8em;
+		color: #B8B9D0;
+
+		@media (min-width: 992px) {
+			&:hover {
+				color: $hover !important;
+			}
+		}
+	
+		&:active {
+			color: $active !important;
+		}
+	}
+}
+
+.disabled {
+	pointer-events: none;
+	opacity: 1 !important;
+}

@@ -22,28 +22,34 @@ import '../text-page.html';
 import '../page-404.html';
 import '../coming-soon.html';
 import '../common-page.html';
+
+// == BeFreeApp ========================
+import '../befreeApp/app.html';
+import { toggleShowMobileSearch } from '../befreeApp/components/header/header';
+// == // BeFreeApp ========================
+
 // == and pages ======================
 
 // == plagins ===================
-import {da} from './da';
-import {convertImgToSvg} from './function';
+import { da } from './da';
+import { convertImgToSvg } from './function';
 import { inputMaskInit } from './inputmask';
 import { popupInit } from '../popups/popup';
 // == plagins ===================
 
 
 // == blocks =================
-import {mobileMenuDropdownHandler} from '../blocks/header/header';
-import {burger} from '../blocks/burger/burger';
-import {cookieInit} from '../blocks/cookie-message/cookie-message';
+import { mobileMenuDropdownHandler } from '../blocks/header/header';
+import { burger } from '../blocks/burger/burger';
+import { cookieInit } from '../blocks/cookie-message/cookie-message';
 import '../blocks/home-map/home-map';
-import {cryptocurrencySliderInit, popularBrandInit, sliderInfoBlockInit, sharesSliderInit} from '../blocks/sliders/sliders';
-import {promoHeaderBottomBtnHandler} from '../blocks/promo-header/promo-header';
-import {categoryPageTextMobileHandler} from '../blocks/category-page-text/category-page-text';
-import {productsFilterHandler} from '../blocks/products-filter/products-filter';
-import {ratingInit} from '../blocks/rating/rating';
-import {selectsHandler} from '../blocks/selects/selects';
-import {categoryHeaderMobileHandler} from '../blocks/category-header/category-header';
+import { cryptocurrencySliderInit, popularBrandInit, sliderInfoBlockInit, sharesSliderInit } from '../blocks/sliders/sliders';
+import { promoHeaderBottomBtnHandler } from '../blocks/promo-header/promo-header';
+import { categoryPageTextMobileHandler } from '../blocks/category-page-text/category-page-text';
+import { productsFilterHandler } from '../blocks/products-filter/products-filter';
+import { ratingInit } from '../blocks/rating/rating';
+import { selectsHandler } from '../blocks/selects/selects';
+import { categoryHeaderMobileHandler } from '../blocks/category-header/category-header';
 import { infoBLockTabletHandler } from '../blocks/info-block/info-block';
 import { changeFedbackformStateInTabsBlock, tabsHandler } from '../blocks/tabs-block/tabs-block';
 import { entityBlockHandler } from '../blocks/entity-block/entity-block';
@@ -79,6 +85,14 @@ $(document).ready(function () {
 	changeFedbackformStateInTabsBlock();
 	entityBlockHandler();
 	showHidePassword();
+
+
+	// == BeFreeApp ========================
+	toggleShowMobileSearch();
+	// == // BeFreeApp ========================
+
+
+
 	// === Проверка, поддержка браузером формата webp ==================================================================
 
 	function testWebP(callback) {
@@ -100,19 +114,19 @@ $(document).ready(function () {
 	});
 
 
-    // ==== ADD PADDING-TOP ================================
-    {
-        let wrapper = document.querySelector('.wrapper');
-        if (wrapper) {
-            let header = document.querySelector('.header');
-            if(header) {
-                let headerHeight = header.clientHeight;
-                wrapper.style.paddingTop = headerHeight + 'px';
-            }
-            
-        }
-    }
-    // ==== AND ADD PADDING-TOP ================================
+	// ==== ADD PADDING-TOP ================================
+	{
+		let wrapper = document.querySelector('.wrapper');
+		if (wrapper) {
+			let header = document.querySelector('.header');
+			if (header) {
+				let headerHeight = header.clientHeight;
+				wrapper.style.paddingTop = headerHeight + 'px';
+			}
+
+		}
+	}
+	// ==== AND ADD PADDING-TOP ================================
 
 	burger();
 
