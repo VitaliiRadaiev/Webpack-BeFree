@@ -89,6 +89,10 @@
         max-width: 582px;
         margin: 0 auto;
 
+        @media (min-width: 992px) {
+            display: block !important;
+        }
+
         @media (max-width: $md2+px) {
             position: absolute;
             top: 100%;
@@ -307,6 +311,8 @@
 
             & .social {
                 margin-bottom: 18px;
+                margin-top: auto;
+                display: flex;
             }
         }
 
@@ -316,8 +322,8 @@
             overflow: auto;
 
             & .social {
-                margin-top: auto;
-                display: flex;
+                
+                
                 &__item {
                     &:not(:last-child) {
                         margin-right: 60px;
@@ -398,6 +404,12 @@
         }
     }
 
+    & .nav {
+        @media (min-width: 992px) {
+            display: flex;
+        }
+    }
+
     & .nav-link {
         font-weight: normal;
         font-size: 18px;
@@ -451,9 +463,6 @@
             background-color: $blue;
             transition: all 0.2s ease;
 
-            @media (max-width: 1267px) {
-                bottom: -32px;
-            }
 
             @media (max-width: $md2+px) {
                 display: none;

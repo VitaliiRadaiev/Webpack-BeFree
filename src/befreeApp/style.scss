@@ -1,9 +1,16 @@
 .wrapper.home-app {
     height: 100%;
-    overflow: auto;
+    overflow-y: auto;
 
     & main.page{
+        position: relative;
         height: 100%;
+        width: 100%;
+    }
+
+    & .footer {
+        position: relative;
+        z-index: 3;
     }
 }
 
@@ -12,10 +19,18 @@
 @import "./components/header/header-v2.scss";
 @import "./components/buttons/buttons.scss";
 @import "./components/burger/burger.scss";
+@import "./components/side-panel/side-panel.scss";
+@import "./components/result/result.scss";
+@import "./components/range-filter/range-filter.scss";
 // == // components =========
 
 
 
 .home-app-map {
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 120%;
 }

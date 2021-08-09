@@ -1,0 +1,114 @@
+.range-filter {
+    &__label {
+        font-size: 18px;
+        line-height: 21px;
+        color: #2a2929;
+        margin-bottom: 15px;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+
+    &__num {
+        flex: 0 0 auto;
+        font-size: 18px;
+        line-height: 21px;
+        color: #b8b9d0;
+    }
+
+    &__slider {
+        flex: 1 1 auto;
+        margin: 0 15px;
+        background: #ffffff;
+        border-radius: 2px;
+        height: 4px;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-user-select: none;
+        -ms-touch-action: none;
+        touch-action: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+
+        & * {
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-user-select: none;
+            -ms-touch-action: none;
+            touch-action: none;
+            -ms-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        & .noUi-base {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+
+            & .noUi-tooltip {
+                position: absolute;
+                transform: translateX(-50%);
+                font-size: 16px;
+                line-height: 19px;
+                color: #2a2929;
+                left: 50%;
+                top: 100%;
+            }
+        }
+
+        & .noUi-connects {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        & .noUi-handle {
+            position: absolute;
+
+            width: 8px;
+            height: 16px;
+            background: linear-gradient(180deg, #5cdeda 0%, #2fff6a 100%);
+            border-radius: 4px;
+            top: -6px;
+            right: -3px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        // & .noUi-handle-upper {
+        //     & .noUi-tooltip {
+        //         position: absolute;
+        //         transform: translateY(-23px) translateX(0%);
+        //         right: 0;
+        //         left: auto;
+        //     }
+        // }
+
+        & .noUi-origin,
+        .noUi-connect {
+            will-cange: transform;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            transform-origin: 0 0;
+            transform-style: flat;
+            width: 10%;
+            height: 10%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        & .noUi-connect {
+            background: linear-gradient(180deg, #5cdeda 0%, #2fff6a 100%);
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

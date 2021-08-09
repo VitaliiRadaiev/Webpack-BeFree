@@ -46,6 +46,7 @@
     "inputmask": "^5.0.5",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
+    "nouislider": "^15.2.0",
     "swiper": "^6.5.7"
   }
 }

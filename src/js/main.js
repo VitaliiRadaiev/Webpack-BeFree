@@ -26,6 +26,9 @@ import '../common-page.html';
 // == BeFreeApp ========================
 import '../befreeApp/app.html';
 import { toggleShowMobileSearch } from '../befreeApp/components/header/header';
+import { asidePanelToggleGroup, toggleShowBoxHandler } from '../befreeApp/components/side-panel/side-panel';
+import { resultToggleGroup } from '../befreeApp/components/result/result';
+import { initRangeSlider } from '../befreeApp/components/range-filter/range-filter';
 // == // BeFreeApp ========================
 
 // == and pages ======================
@@ -89,6 +92,10 @@ $(document).ready(function () {
 
 	// == BeFreeApp ========================
 	toggleShowMobileSearch();
+	asidePanelToggleGroup();
+	resultToggleGroup();
+	toggleShowBoxHandler();
+	initRangeSlider();
 	// == // BeFreeApp ========================
 
 
