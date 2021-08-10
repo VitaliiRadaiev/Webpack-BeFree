@@ -28,7 +28,8 @@ export function asidePanelToggleGroup() {
 
 export function toggleShowBoxHandler() {
     let triggers = Array.from(document.querySelectorAll('[data-trigger-box-by-id]'));
-    let boxes = Array.from(document.querySelectorAll('[data-box-id]')) ;
+    let boxes = Array.from(document.querySelectorAll('[data-box-id]'));
+    let sidePanel = document.querySelector('.side-panel');
 
     triggers.forEach(item => {
         let id = item.dataset.triggerBoxById;
@@ -37,7 +38,7 @@ export function toggleShowBoxHandler() {
         item.addEventListener('click', () => {
             item.classList.toggle('active');
             box.classList.toggle('open');
-
+            sidePanel.classList.add('box-is-open');
             triggers.forEach(i => {
                 if(i === item) return;
 
@@ -60,6 +61,7 @@ export function toggleShowBoxHandler() {
             btnClose.addEventListener('click', () => {
                 box.classList.remove('open');
                 trigger.classList.remove('active');
+                sidePanel.classList.remove('box-is-open');
             })
         }
     })

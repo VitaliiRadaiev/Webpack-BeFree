@@ -29,6 +29,8 @@ import { toggleShowMobileSearch } from '../befreeApp/components/header/header';
 import { asidePanelToggleGroup, toggleShowBoxHandler } from '../befreeApp/components/side-panel/side-panel';
 import { resultToggleGroup } from '../befreeApp/components/result/result';
 import { initRangeSlider } from '../befreeApp/components/range-filter/range-filter';
+import { starsInit } from '../befreeApp/components/stars/stars';
+import { initScrollBar } from '../befreeApp/scripts';
 // == // BeFreeApp ========================
 
 // == and pages ======================
@@ -96,6 +98,8 @@ $(document).ready(function () {
 	resultToggleGroup();
 	toggleShowBoxHandler();
 	initRangeSlider();
+	initScrollBar();
+	starsInit();
 	// == // BeFreeApp ========================
 
 

@@ -1,4 +1,5 @@
-import $ from 'jquery';
+import SimpleBar from 'simplebar';
+
 
 //SlideToggle
 export function _slideUp(target, duration = 500) {
@@ -66,3 +67,16 @@ export function _slideToggle (target, duration = 500) {
 	}
 }
 //========================================
+
+
+export function initScrollBar() {
+	let scrollElements = document.querySelectorAll('[data-scroll]');
+	if(scrollElements.length) {
+		scrollElements.forEach(el => {
+			if(!el.getAttribute('data-simplebar') && document.documentElement.clientWidth > 991.98) {
+				new SimpleBar(el);
+			}
+		})
+
+	}
+}

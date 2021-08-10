@@ -1,4 +1,6 @@
 import {_slideUp, _slideDown, _slideToggle} from '../../js/function';
+import SimpleBar from 'simplebar';
+
 
 export function selectsHandler() {
     let selects = document.getElementsByTagName('select');
@@ -66,10 +68,11 @@ function select_item(select) {
 	select_parent.insertAdjacentHTML('beforeend',
 		'<div class="select__item">' +
 		'<div class="select__title">' + select_type_content + '</div>' +
-		'<div class="select__options">' + select_get_options(select_options) + '</div>' +
+		'<div class="select__options" data-scroll>' + select_get_options(select_options) + '</div>' +
 		'</div></div>');
 
 	select_actions(select, select_parent);
+	new SimpleBar(select_parent.querySelector('.select__options'));
 }
 function select_actions(original, select) {
 	const select_item = select.querySelector('.select__item');

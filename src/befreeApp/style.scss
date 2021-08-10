@@ -1,3 +1,6 @@
+@import '~simplebar/dist/simplebar.css';
+
+
 .wrapper.home-app {
     height: 100%;
     overflow-y: auto;
@@ -22,6 +25,9 @@
 @import "./components/side-panel/side-panel.scss";
 @import "./components/result/result.scss";
 @import "./components/range-filter/range-filter.scss";
+@import "./components/info-card-sm/info-card-sm.scss";
+@import "./components/info-card/info-card.scss";
+@import "./components/stars/stars.scss";
 // == // components =========
 
 
@@ -34,3 +40,16 @@
     z-index: 1;
     height: 120%;
 }
+
+[data-scroll] {
+    & .simplebar-track.simplebar-vertical {
+        width: 6px;
+    }
+
+    & .simplebar-scrollbar {
+        &:before {
+            background: #dcdce3;
+        }
+    }
+}
+

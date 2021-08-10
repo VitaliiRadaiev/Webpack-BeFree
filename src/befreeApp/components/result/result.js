@@ -11,7 +11,6 @@ export function resultToggleGroup() {
                 new Promise((res, rej) => {
                     resultGroup.style.width = resultGroup.scrollWidth + 'px';
                     list.style.minWidth = list.clientWidth + 7 + 'px';
-                    console.log(list);
                     setTimeout(() => {
                         res();
                     }, 10)
