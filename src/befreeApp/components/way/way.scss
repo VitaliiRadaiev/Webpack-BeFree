@@ -8,13 +8,14 @@
 
     @media (max-width: $md2+px) {
         top: auto;
-        bottom: 15px;
+        bottom: 80px;
     }
 
     @media (max-width: $md4+px) {
         margin: 0;
         left: 50px;
         transform: translateX(0%);
+        bottom: 70px;
     }
 
     &__checkbox {

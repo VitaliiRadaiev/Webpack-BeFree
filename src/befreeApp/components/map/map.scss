@@ -8,12 +8,12 @@
     align-items: center;
 
     @media (max-width: $md2+px) {
-        bottom: 85px;
+        bottom: 150px;
     }
 
     @media (max-width: $md3+px) {
         right: 15px;
-        bottom: 80px;
+        bottom: 135px;
     }
 
     &__plus {
