@@ -1,5 +1,6 @@
 import noUiSlider from "nouislider";
 
+
 export function initRangeSlider() {
     let rangeSlider = document.querySelector('.range-filter__slider');
     if (rangeSlider) {
@@ -22,3 +23,5 @@ export function initRangeSlider() {
         });
     }
 }
+
+
