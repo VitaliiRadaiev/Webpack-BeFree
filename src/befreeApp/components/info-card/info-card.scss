@@ -1,8 +1,84 @@
+.home-app-map {
+    & .gm-style-iw  {
+        min-width: 252px !important;
+        max-width: 315px !important;
+    }
+    & .gm-style-iw-d {
+        min-width: 252px !important;
+    }
+    & .gm-style-iw.gm-style-iw-c {
+        padding: 0px !important;
+    }
+
+    & .gm-style .gm-style-iw-c {
+        overflow: visible;
+    }
+
+    & .gm-style-iw-d {
+        overflow: auto !important;
+        padding: 20px;
+
+        @media (max-width: $md4+px) {
+            padding: 10px;
+        }
+    }
+
+    & .gm-style-iw-t {
+        &:after {
+            display: none;
+        }
+    }
+
+    & button.gm-ui-hover-effect {
+        height: 20px !important;
+        width: 20px !important;
+        background: #fff !important;
+        border-radius: 5px !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        top: -23px !important;
+        right: -19px !important;
+        
+        & img {
+            margin: 0 !important;
+        }
+    }
+}
+
 .info-card {
     background: #ffffff;
     border-radius: 5px;
     position: relative;
     padding: 10px;
+
+    &.info-card-map {
+        padding: 0;
+        & .info-card__img {
+            width: 100%;
+            height: 164px;
+            flex: 0 0 164px;
+            margin-bottom: 15px;
+            margin-right: 0;
+            @media (max-width: $md4+px) {
+                height: 137px;
+                flex: 0 0 137px;
+            }
+        }
+
+        & .info-card__like {
+            top: 170px;
+            right: 0;
+
+            @media (max-width: $md4+px) {
+                top: 145px;
+            }
+
+            & > svg path {
+                stroke: $blue;
+            }
+        }
+    }
 
     &__like {
         position: absolute;

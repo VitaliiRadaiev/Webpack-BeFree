@@ -156,7 +156,9 @@ const plugins = () => {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        {from: path.resolve(__dirname, 'src/assets') , to: path.resolve(__dirname, 'app')}
+        {from: path.resolve(__dirname, 'src/assets') , to: path.resolve(__dirname, 'app')},
+        {from: path.resolve(__dirname, 'src/befreeApp/img') , to: path.resolve(__dirname, 'app/imgApp')},
+
       ]
     }),
   ];
