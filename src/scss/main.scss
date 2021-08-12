@@ -1,4 +1,4 @@
-//@import "../bootstrap-4.5.3-dist/css/bootstrap.min.css";
+@import "../bootstrap-4.5.3-dist/css/bootstrap.min.css";
 @import "mixins";
 @import "vendor";
 @import "vars";
@@ -289,10 +289,9 @@ textarea {
 @import "./pages/coming-soon";
 @import "./pages/page-404";
 @import "./pages/store-card";
-@import "../befreeApp/style.scss";
 
 // == BeFreeApp ============
-@import "../blocks/box/box";
+@import "../befreeApp/style.scss";
 // == // BeFreeApp ============
 
 // ==== AND PAGES =====================================================

@@ -10,6 +10,7 @@ if (selects.length > 0) {
 function selects_init() {
 	for (let index = 0; index < selects.length; index++) {
 		const select = selects[index];
+		select.classList.add('select-init');
 		select_init(select);
 	}
 	//select_callback();

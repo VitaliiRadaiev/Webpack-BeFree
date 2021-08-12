@@ -31,6 +31,7 @@ import { resultToggleGroup } from '../befreeApp/components/result/result';
 import { initRangeSlider } from '../befreeApp/components/range-filter/range-filter';
 import { starsInit } from '../befreeApp/components/stars/stars';
 import { scrollToFooterHandler } from '../befreeApp/components/scroll-to-footer/scroll-to-footer';
+import { selectsAppInit } from '../befreeApp/components/selects/selects';
 import { initScrollBar } from '../befreeApp/scripts';
 // == // BeFreeApp ========================
 
@@ -102,6 +103,7 @@ $(document).ready(function () {
 	initScrollBar();
 	starsInit();
 	scrollToFooterHandler();
+	selectsAppInit();
 	// == // BeFreeApp ========================
 
 
