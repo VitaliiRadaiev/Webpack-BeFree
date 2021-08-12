@@ -34,6 +34,17 @@ export function toggleShowBoxHandler() {
     triggers.forEach(item => {
         let id = item.dataset.triggerBoxById;
         let box =  boxes.filter(box => box.dataset.boxId === id)[0];
+
+        if(item.classList.contains('open-in-mobile-device')) {
+            if(document.documentElement.clientWidth < 768) {
+                let id = item.dataset.triggerBoxById;
+                let box =  boxes.filter(box => box.dataset.boxId === id)[0];
+    
+                item.classList.add('active');
+                box.classList.add('open');
+                sidePanel.classList.add('box-is-open');
+            }
+        }
         
         item.addEventListener('click', () => {
             item.classList.toggle('active');
