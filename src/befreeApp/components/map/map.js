@@ -419,8 +419,3 @@ function initMap() {
 
 
 window.initMap = initMap;
-
-window.addEventListener("DOMContentLoaded", () => {
-
-
-})
