@@ -147,19 +147,19 @@
     }
 
     &__body {
-        padding-top: 100px !important;
+        padding-top: 36px !important;
         padding-bottom: 80px !important;
         position: relative;
-        z-index: 2;
+        z-index: 3;
 
 
-        @media (max-width: $md2+px) {
-            padding-top: 85px !important;
-        }
+        // @media (max-width: $md2+px) {
+        //     padding-top: 85px !important;
+        // }
 
-        @media (max-width: $md3+px) {
-            padding-top: 40px !important;
-        }
+        // @media (max-width: $md3+px) {
+        //     padding-top: 40px !important;
+        // }
 
         @media (max-width: $md4+px) {
             padding-top: 30px !important;
@@ -221,9 +221,18 @@
 
     &__local-icon {
         position: absolute;
-        z-index: 5;
+        z-index: 2;
         left: 50%;
         bottom: 0;
         transform: translate(-50%, 50%);
+    }
+
+    &__select-group {
+        @media (min-width: 1600px) {
+            position: absolute !important;
+            top: 27px;
+            right: 0;
+            transform: translateX(calc(100% + 20px));
+        }
     }
 }

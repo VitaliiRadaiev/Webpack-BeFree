@@ -82,7 +82,7 @@ $(document).ready(function () {
 	sliderInfoBlockInit();
 	popularBrandInit();
 	sharesSliderInit();
-	promoHeaderBottomBtnHandler();
+	window.homeMap = promoHeaderBottomBtnHandler();
 	categoryPageTextMobileHandler();
 	productsFilterHandler();
 	ratingInit();
@@ -135,10 +135,14 @@ $(document).ready(function () {
 		if (wrapper) {
 			let header = document.querySelector('.header');
 			if (header) {
-				let headerHeight = header.clientHeight;
-				wrapper.style.paddingTop = headerHeight + 'px';
+				const setPedding = () => wrapper.style.paddingTop = header.clientHeight + 'px';
+				setPedding();
+				let id = setInterval(setPedding, 200);
+				setTimeout(() => {
+					clearInterval(id);
+				},1000)
+				window.addEventListener('resize', setPedding);
 			}
-
 		}
 	}
 	// ==== AND ADD PADDING-TOP ================================

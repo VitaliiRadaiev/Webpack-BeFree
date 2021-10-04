@@ -1,6 +1,7 @@
 .footer {
     position: relative;
     overflow: hidden;
+    z-index: 3;
     &__bg {
         position: absolute;
         top: 0;

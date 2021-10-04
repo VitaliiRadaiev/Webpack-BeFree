@@ -113,15 +113,6 @@
                 margin-bottom: 15px !important;
             }
         }
-
-        & .radio-wrap, & .checkbox-wrap {
-            color: #fff;
-        }
-
-        & .radio-wrap__label:before, & .checkbox-wrap__label:before {
-            background: rgba(#fff, 0.1);
-            box-shadow: -12px -12px 24px #7D82FF, 12px 12px 24px #5D60D4;
-        }
     }
 
     &__title {
