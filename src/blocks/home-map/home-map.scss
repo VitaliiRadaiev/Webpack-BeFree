@@ -5,7 +5,10 @@
     z-index: 3;
 
     &._hide {
-        margin-bottom: -700px;
+        @media (min-width: 1920px) {
+            margin-bottom: -700px;
+        }
+        margin-bottom: -760px;
         &:before {
             height: 50%;
         }

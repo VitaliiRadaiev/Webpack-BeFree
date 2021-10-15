@@ -13,13 +13,11 @@
         @media (max-width: $md2+px) {
             display: block;
             z-index: 2;
-
-            
         }
 
         &:after {
             position: absolute;
-            content: '';
+            content: "";
             top: 0;
             left: 0;
             width: 100%;
@@ -39,17 +37,28 @@
 
                 &:before {
                     position: absolute;
-                    content: '';
+                    content: "";
                     top: 0;
                     left: 0;
                     width: 100%;
                     height: 150px;
                     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6d71f9+0,000000+100&0.65+0,0+100 */
-                    background: -moz-linear-gradient(top,  rgba(109,113,249,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-                    background: -webkit-linear-gradient(top,  rgba(109,113,249,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-                    background: linear-gradient(to bottom,  rgba(109,113,249,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    background: -moz-linear-gradient(
+                        top,
+                        rgba(109, 113, 249, 0.65) 0%,
+                        rgba(0, 0, 0, 0) 100%
+                    ); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(
+                        top,
+                        rgba(109, 113, 249, 0.65) 0%,
+                        rgba(0, 0, 0, 0) 100%
+                    ); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(
+                        to bottom,
+                        rgba(109, 113, 249, 0.65) 0%,
+                        rgba(0, 0, 0, 0) 100%
+                    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
                     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a66d71f9', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-
                 }
             }
 
@@ -62,12 +71,11 @@
             }
 
             @media (max-width: 574px) {
-               bottom: auto;
-               top: 0px;
-               width: 747px;
+                bottom: auto;
+                top: 0px;
+                width: 747px;
             }
         }
-
     }
 
     &__bg-inner {
@@ -75,7 +83,7 @@
         position: absolute;
         bottom: 0;
         left: 50%;
-        width: 7342px;
+        width: 9342px;
         padding-bottom: 100%;
         display: flex;
         flex-direction: column;
@@ -94,12 +102,12 @@
             height: 100%;
 
             @media (max-width: $md2+px) {
-                display: none
+                display: none;
             }
         }
 
         @media (max-width: 1920px) {
-            width: 4900px;
+            width: 6810px;
         }
 
         @media (max-width: 1267px) {
@@ -115,7 +123,6 @@
         @media (max-width: $md4+px) {
             width: 642px;
         }
-       
     }
 
     &__bg-bottom {
@@ -142,16 +149,13 @@
             right: -199px;
             width: 1156px;
         }
-
-
     }
 
     &__body {
-        padding-top: 31px !important;
-        padding-bottom: 24px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
         position: relative;
         z-index: 3;
-
 
         // @media (max-width: $md2+px) {
         //     padding-top: 85px !important;
@@ -175,7 +179,6 @@
         }
     }
 
-    
     &__title {
         margin-bottom: 20px;
         max-width: 17.2em;
@@ -190,7 +193,7 @@
             margin-bottom: 15px;
         }
     }
-    
+
     &__subtitle {
         position: relative;
         font-weight: normal;
@@ -228,15 +231,15 @@
     }
 
     &__select-group {
-        @media (min-width: 1600px) {
+        @media (min-width: 1580px) {
             position: absolute !important;
-            top: 27px;
+            top: 5px;
             right: 0;
-            transform: translateX(calc(100% + 20px));
+            transform: translateX(97%);
             display: block;
         }
 
-        @media (max-width: 1599.98px) {
+        @media (max-width: 1579.98px) {
             display: flex;
 
             & > * {
@@ -250,6 +253,61 @@
 
         @media (max-width: 1199.98px) {
             display: block;
+        }
+    }
+
+    & .promo-header-search {
+        & .promo-header-search__input {
+            min-height: 42px;
+            font-size: 16px;
+
+            &::placeholder {
+                font-size: 16px;
+            }
+        }
+
+        & .btn {
+            height: 42px;
+            font-size: 16px;
+        }
+    }
+
+    & .header-sort {
+        & .header-sort__title {
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+        
+        & .header-select .select__item {
+            padding-top: 10px;
+            & .select__title {
+                width: 100%;
+            }
+
+            & .select__value  {
+                font-size: 16px;
+            }
+        }
+    }
+
+    & .header-bottom-btn {
+        height: 60px;
+        width: 60px;
+
+        & > span {
+            min-width: 40px;
+            height: 40px;
+            padding: 10px;
+        }
+    }
+
+    & .header-select-wrap {
+        height: 42px;
+    }
+
+    & .radio-wrap  {
+        & .radio-wrap__label {
+            font-size: 16px;
         }
     }
 }

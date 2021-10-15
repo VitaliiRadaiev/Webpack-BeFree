@@ -19,13 +19,13 @@
             min-height: 60px;
         }
 
-        @media (min-width: 768px) {
-            min-height: 80px;
-        }
+        // @media (min-width: 768px) {
+        //     min-height: 80px;
+        // }
 
-        @media (min-width: 992px) {
-            min-height: 90px;
-        }
+        // @media (min-width: 992px) {
+        //     min-height: 90px;
+        // }
     }
 
     &__logo {
@@ -37,11 +37,6 @@
             }
         }
 
-        @media (max-width: $md2+px) {
-            &.logo {
-                max-width: 190px;
-            }
-        }
 
         @media (max-width: $md3+px) {
             &.logo {
@@ -200,7 +195,7 @@
 
 
 .logo {
-	max-width: 190px;
+	max-width: 150px;
 	width: 100%;
 	position: relative;
 
@@ -403,25 +398,25 @@
 
         }
 
-        &:before {
-            position: absolute;
-            content: '';
-            bottom: -30px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0%;
-            height: 2px;
-            background-color: $blue;
-            transition: all .2s ease;
+        // &:before {
+        //     position: absolute;
+        //     content: '';
+        //     bottom: -30px;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     width: 0%;
+        //     height: 2px;
+        //     background-color: $blue;
+        //     transition: all .2s ease;
 
-            @media (max-width: 1267px) {
-                bottom: -32px;
-            }
+        //     @media (max-width: 1267px) {
+        //         bottom: -32px;
+        //     }
 
-            @media (max-width: $md2+px) {
-                display: none;
-            }
-        }
+        //     @media (max-width: $md2+px) {
+        //         display: none;
+        //     }
+        // }
 
         &._active {
             color: $turquoise;
