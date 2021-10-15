@@ -280,6 +280,8 @@
         
         & .header-select .select__item {
             padding-top: 10px;
+            min-height: 42px;
+            padding-bottom: 8px;
             & .select__title {
                 width: 100%;
             }
