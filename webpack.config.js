@@ -199,6 +199,11 @@ module.exports = {
     main: './js/main.js',
     appMap: './befreeApp/components/map/map.js',
   }, 
+  resolve: {
+    alias: {
+      '@site': path.resolve(__dirname, 'src'),
+    }
+  },
   output: {
     filename: `./js/${filename('js')}`,
     path: path.resolve(__dirname, 'app'),

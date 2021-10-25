@@ -1,66 +1,66 @@
-import '../../node_modules/focus-visible/dist/focus-visible';
+import 'focus-visible';
 import $ from 'jquery';
 
-import '../bootstrap-4.5.3-dist/js/bootstrap.bundle';
+import '@site/bootstrap-4.5.3-dist/js/bootstrap.bundle';
 
-import '../scss/main.scss';
+import '@site/scss/main.scss';
 
 // == pages ======================
-import '../index.html';
-import '../contentPage.html';
-import '../category-page.html';
-import '../store-card.html';
-import '../store-card-show-message.html';
-import '../cabinet-entity.html';
-import '../cabinet-profile.html';
-import '../cabinet-password.html';
-import '../cabinet-480.html';
-import '../cabinet-entity-480.html';
-import '../cabinet-profile-480.html';
-import '../cabinet-password-480.html';
-import '../text-page.html';
-import '../page-404.html';
-import '../coming-soon.html';
-import '../common-page.html';
+import '@site/index.html';
+import '@site/contentPage.html';
+import '@site/category-page.html';
+import '@site/store-card.html';
+import '@site/store-card-show-message.html';
+import '@site/cabinet-entity.html';
+import '@site/cabinet-profile.html';
+import '@site/cabinet-password.html';
+import '@site/cabinet-480.html';
+import '@site/cabinet-entity-480.html';
+import '@site/cabinet-profile-480.html';
+import '@site/cabinet-password-480.html';
+import '@site/text-page.html';
+import '@site/page-404.html';
+import '@site/coming-soon.html';
+import '@site/common-page.html';
 
 // == BeFreeApp ========================
-import '../befreeApp/app.html';
-import { toggleShowMobileSearch } from '../befreeApp/components/header/header';
-import { asidePanelToggleGroup, toggleShowBoxHandler } from '../befreeApp/components/side-panel/side-panel';
-import { resultToggleGroup } from '../befreeApp/components/result/result';
-import { initRangeSlider } from '../befreeApp/components/range-filter/range-filter';
-import { starsInit } from '../befreeApp/components/stars/stars';
-import { scrollToFooterHandler } from '../befreeApp/components/scroll-to-footer/scroll-to-footer';
-import { selectsAppInit } from '../befreeApp/components/selects/selects';
-import { initScrollBar } from '../befreeApp/scripts';
+import '@site/befreeApp/app.html';
+import { toggleShowMobileSearch } from '@site/befreeApp/components/header/header';
+import { asidePanelToggleGroup, toggleShowBoxHandler } from '@site/befreeApp/components/side-panel/side-panel';
+import { resultToggleGroup } from '@site/befreeApp/components/result/result';
+import { initRangeSlider } from '@site/befreeApp/components/range-filter/range-filter';
+import { starsInit } from '@site/befreeApp/components/stars/stars';
+import { scrollToFooterHandler } from '@site/befreeApp/components/scroll-to-footer/scroll-to-footer';
+import { selectsAppInit } from '@site/befreeApp/components/selects/selects';
+import { initScrollBar } from '@site/befreeApp/scripts';
 // == // BeFreeApp ========================
 
 // == and pages ======================
 
 // == plagins ===================
-import { da } from './da';
-import { convertImgToSvg } from './function';
-import { inputMaskInit } from './inputmask';
-import { popupInit } from '../popups/popup';
+import { da } from '@site/js/da';
+import { convertImgToSvg } from '@site/js/function';
+import { inputMaskInit } from '@site/js/inputmask';
+import { popupInit } from '@site/popups/popup';
 // == plagins ===================
 
 
 // == blocks =================
-import { mobileMenuDropdownHandler } from '../blocks/header/header';
-import { burger } from '../blocks/burger/burger';
-import { cookieInit } from '../blocks/cookie-message/cookie-message';
-import '../blocks/home-map/home-map';
-import { cryptocurrencySliderInit, popularBrandInit, sliderInfoBlockInit, sharesSliderInit } from '../blocks/sliders/sliders';
-import { promoHeaderBottomBtnHandler, promoHeaderShowHideFilterHandler	 } from '../blocks/promo-header/promo-header';
-import { categoryPageTextMobileHandler } from '../blocks/category-page-text/category-page-text';
-import { productsFilterHandler } from '../blocks/products-filter/products-filter';
-import { ratingInit } from '../blocks/rating/rating';
-import { selectsHandler } from '../blocks/selects/selects';
-import { categoryHeaderMobileHandler } from '../blocks/category-header/category-header';
-import { infoBLockTabletHandler } from '../blocks/info-block/info-block';
-import { changeFedbackformStateInTabsBlock, tabsHandler } from '../blocks/tabs-block/tabs-block';
-import { entityBlockHandler } from '../blocks/entity-block/entity-block';
-import { showHidePassword } from '../blocks/forms/forms';
+import { mobileMenuDropdownHandler } from '@site/blocks/header/header';
+import { burger } from '@site/blocks/burger/burger';
+import { cookieInit } from '@site/blocks/cookie-message/cookie-message';
+import '@site/blocks/home-map/home-map';
+import { cryptocurrencySliderInit, popularBrandInit, sliderInfoBlockInit, sharesSliderInit } from '@site/blocks/sliders/sliders';
+import { promoHeaderBottomBtnHandler, promoHeaderShowHideFilterHandler	 } from '@site/blocks/promo-header/promo-header';
+import { categoryPageTextMobileHandler } from '@site/blocks/category-page-text/category-page-text';
+import { productsFilterHandler } from '@site/blocks/products-filter/products-filter';
+import { ratingInit } from '@site/blocks/rating/rating';
+import { selectsHandler } from '@site/blocks/selects/selects';
+import { categoryHeaderMobileHandler } from '@site/blocks/category-header/category-header';
+import { infoBLockTabletHandler } from '@site/blocks/info-block/info-block';
+import { changeFedbackformStateInTabsBlock, tabsHandler } from '@site/blocks/tabs-block/tabs-block';
+import { entityBlockHandler } from '@site/blocks/entity-block/entity-block';
+import { showHidePassword } from '@site/blocks/forms/forms';
 // == and blocks =================
 
 

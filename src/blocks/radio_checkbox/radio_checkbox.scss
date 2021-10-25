@@ -21,7 +21,7 @@
             & + .radio-wrap__label {
                 &:before {
 					background-color: #2FFF6A;
-					background-image: url('../img/icons/check-blue.svg');
+					background-image: url('@site/img/icons/check-blue.svg');
 					background-size: 80%;
 					background-repeat: no-repeat;
 					background-position: center;
@@ -92,7 +92,7 @@
             & + .checkbox-wrap__label {
                 &:before {
 					background-color: #2FFF6A;
-					background-image: url('../img/icons/check-blue.svg');
+					background-image: url('@site/img/icons/check-blue.svg');
 					background-size: 80%;
 					background-repeat: no-repeat;
 					background-position: center;

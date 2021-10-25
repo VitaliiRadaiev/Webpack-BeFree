@@ -1,9 +1,9 @@
-@import "../bootstrap-4.5.3-dist/css/bootstrap.min.css";
+@import "@site/bootstrap-4.5.3-dist/css/bootstrap.min.css";
 @import "mixins";
 @import "vendor";
 @import "vars";
-@import "../icomoon/style";
-@import './plagins/swiper-bundle.scss';
+@import "@site/icomoon/style";
+@import '@site/scss/plagins/swiper-bundle.scss';
 
 * {
 	padding: 0px;
@@ -286,63 +286,63 @@ textarea {
 
 
 // ==== PAGES =====================================================
-@import "./pages/coming-soon";
-@import "./pages/page-404";
-@import "./pages/store-card";
+@import "@site/scss/pages/coming-soon";
+@import "@site/scss/pages/page-404";
+@import "@site/scss/pages/store-card";
 
 // == BeFreeApp ============
-@import "../befreeApp/style.scss";
+@import "@site/befreeApp/style.scss";
 // == // BeFreeApp ============
 
 // ==== AND PAGES =====================================================
 
 
 // ==== BLOCKS =====================================================
-@import "../blocks/header/header";
-@import "../blocks/buttons/buttons";
-@import "../blocks/languages/languages";
-@import "../blocks/dropdown/dropdown";
-@import "../blocks/titles/titles";
-@import "../blocks/sliders/sliders";
-@import "../blocks/pagination/pagination";
-@import "../blocks/forms/forms";
-@import "../blocks/text-content/text-content";
-@import "../blocks/social/social";
-@import "../blocks/breadcrumb/breadcrumb";
-@import "../blocks/burger/burger";
-@import "../blocks/cookie-message/cookie-message";
-@import "../blocks/footer/footer";
-@import "../blocks/hero/hero";
-@import "../blocks/info-block/info-block";
-@import "../blocks/popup/popup";
-@import "../blocks/rating/rating";
-@import "../blocks/shares-block/shares-block";
-@import "../blocks/tabs-block/tabs-block";
-@import "../blocks/promo-header/promo-header";
-@import "../blocks/home-map/home-map";
-@import "../blocks/category-page-text/category-page-text";
-@import "../blocks/products/products";
-@import "../blocks/products-filter/products-filter";
-@import "../blocks/products-list/products-list";
-@import "../blocks/card-product/card-product";
-@import "../blocks/category-header/category-header";
-@import "../blocks/promo-header-search/promo-header-search";
-@import "../blocks/header-sort/header-sort";
-@import "../blocks/selects/selects";
-@import "../blocks/radio_checkbox/radio_checkbox";
-@import "../blocks/brand-card/brand-card";
-@import "../blocks/shares-card/shares-card";
-@import "../blocks/reviews-list/reviews-list";
-@import "../blocks/form-message-block/form-message-block";
-@import "../blocks/cabinet/cabinet";
-@import "../blocks/cabinet-tabs/cabinet-tabs";
-@import "../blocks/entity-block/entity-block";
-@import "../blocks/entity-list/entity-list";
-@import "../blocks/entity-form/entity-form";
-@import "../blocks/text-img-block/text-img-block";
-@import "../blocks/important-text/important-text";
-@import "../blocks/quote/quote";
-@import "../blocks/author-block/author-block";
-@import "../blocks/box/box";
+@import "@site/blocks/header/header";
+@import "@site/blocks/buttons/buttons";
+@import "@site/blocks/languages/languages";
+@import "@site/blocks/dropdown/dropdown";
+@import "@site/blocks/titles/titles";
+@import "@site/blocks/sliders/sliders";
+@import "@site/blocks/pagination/pagination";
+@import "@site/blocks/forms/forms";
+@import "@site/blocks/text-content/text-content";
+@import "@site/blocks/social/social";
+@import "@site/blocks/breadcrumb/breadcrumb";
+@import "@site/blocks/burger/burger";
+@import "@site/blocks/cookie-message/cookie-message";
+@import "@site/blocks/footer/footer";
+@import "@site/blocks/hero/hero";
+@import "@site/blocks/info-block/info-block";
+@import "@site/blocks/popup/popup";
+@import "@site/blocks/rating/rating";
+@import "@site/blocks/shares-block/shares-block";
+@import "@site/blocks/tabs-block/tabs-block";
+@import "@site/blocks/promo-header/promo-header";
+@import "@site/blocks/home-map/home-map";
+@import "@site/blocks/category-page-text/category-page-text";
+@import "@site/blocks/products/products";
+@import "@site/blocks/products-filter/products-filter";
+@import "@site/blocks/products-list/products-list";
+@import "@site/blocks/card-product/card-product";
+@import "@site/blocks/category-header/category-header";
+@import "@site/blocks/promo-header-search/promo-header-search";
+@import "@site/blocks/header-sort/header-sort";
+@import "@site/blocks/selects/selects";
+@import "@site/blocks/radio_checkbox/radio_checkbox";
+@import "@site/blocks/brand-card/brand-card";
+@import "@site/blocks/shares-card/shares-card";
+@import "@site/blocks/reviews-list/reviews-list";
+@import "@site/blocks/form-message-block/form-message-block";
+@import "@site/blocks/cabinet/cabinet";
+@import "@site/blocks/cabinet-tabs/cabinet-tabs";
+@import "@site/blocks/entity-block/entity-block";
+@import "@site/blocks/entity-list/entity-list";
+@import "@site/blocks/entity-form/entity-form";
+@import "@site/blocks/text-img-block/text-img-block";
+@import "@site/blocks/important-text/important-text";
+@import "@site/blocks/quote/quote";
+@import "@site/blocks/author-block/author-block";
+@import "@site/blocks/box/box";
 
 // ==== AND BLOCKS =====================================================

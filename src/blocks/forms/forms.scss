@@ -37,7 +37,7 @@
         content: '';
         height: 14px;
         width: 14px;
-        background: url('../img/icons/alert.svg') center no-repeat;
+        background: url('@site/img/icons/alert.svg') center no-repeat;
     }
 }
 
@@ -427,7 +427,7 @@
 
             &._active {
                 & > span {
-                    background: url(../img/icons/eye.svg) center no-repeat;
+                    background: url(@site/img/icons/eye.svg) center no-repeat;
                 }
             }
             
@@ -435,7 +435,7 @@
                 display: block;
                 height: 24px;
                 width: 24px;
-                background: url(../img/icons/eye-close.svg) center no-repeat;
+                background: url(@site/img/icons/eye-close.svg) center no-repeat;
             }
         }
     }
