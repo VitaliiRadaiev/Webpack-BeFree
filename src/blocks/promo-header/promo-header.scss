@@ -257,24 +257,29 @@
     }
 
     & .promo-header-search {
-        & .promo-header-search__input {
-            min-height: 42px;
-            font-size: 16px;
+        // & .promo-header-search__input {
+        //     min-height: 42px;
+        //     font-size: 16px;
 
-            &::placeholder {
-                font-size: 16px;
-            }
-        }
+        //     &::placeholder {
+        //         font-size: 16px;
+        //     }
+        // }
 
-        & .btn {
-            height: 42px;
-            font-size: 16px;
-        }
+        // & .btn {
+        //     height: 42px;
+        //     font-size: 16px;
+        // }
+    }
+
+    & .header-sort-wrap {
+        display: none;
     }
 
     & .header-sort {
+        
         & .header-sort__title {
-            font-size: 12px;
+            font-size: 14px;
             margin-bottom: 0px;
         }
         

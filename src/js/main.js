@@ -51,7 +51,7 @@ import { burger } from '../blocks/burger/burger';
 import { cookieInit } from '../blocks/cookie-message/cookie-message';
 import '../blocks/home-map/home-map';
 import { cryptocurrencySliderInit, popularBrandInit, sliderInfoBlockInit, sharesSliderInit } from '../blocks/sliders/sliders';
-import { promoHeaderBottomBtnHandler } from '../blocks/promo-header/promo-header';
+import { promoHeaderBottomBtnHandler, promoHeaderShowHideFilterHandler	 } from '../blocks/promo-header/promo-header';
 import { categoryPageTextMobileHandler } from '../blocks/category-page-text/category-page-text';
 import { productsFilterHandler } from '../blocks/products-filter/products-filter';
 import { ratingInit } from '../blocks/rating/rating';
@@ -83,6 +83,7 @@ $(document).ready(function () {
 	popularBrandInit();
 	sharesSliderInit();
 	window.homeMap = promoHeaderBottomBtnHandler();
+	promoHeaderShowHideFilterHandler(homeMap);
 	categoryPageTextMobileHandler();
 	productsFilterHandler();
 	ratingInit();

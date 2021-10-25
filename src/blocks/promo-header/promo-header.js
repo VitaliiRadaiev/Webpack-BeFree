@@ -1,3 +1,5 @@
+import {_slideUp, _slideDown, _slideToggle} from '../../js/function';
+
 export function promoHeaderBottomBtnHandler() {
     let localBtn = document.querySelector('.promo-header__local-icon');
     if (localBtn) {
@@ -21,6 +23,30 @@ export function promoHeaderBottomBtnHandler() {
                 }
             }
         }
+    }
+}
+
+export function promoHeaderShowHideFilterHandler(homeMap) {
+    let promoHeader = document.querySelector('.promo-header');
+    if(promoHeader) {
+        let searchInput = promoHeader.querySelector('.promo-header-search__input');
+        let headerSortBlock = promoHeader.querySelector('.header-sort-wrap');
+
+        searchInput.addEventListener('focus', () => {
+            if(!headerSortBlock.classList.contains('open')) {
+                _slideDown(headerSortBlock);
+                homeMap.show();
+                headerSortBlock.classList.add('open');
+            }
+        })
+
+        searchInput.addEventListener('blur', (e) => {
+            if(!e.target.value.trim()) {
+                _slideUp(headerSortBlock);
+                homeMap.hide();
+                headerSortBlock.classList.remove('open');
+            }
+        })
     }
 }
 
