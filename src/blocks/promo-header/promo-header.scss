@@ -277,7 +277,7 @@
     }
 
     & .header-sort {
-        
+        z-index: 1;
         & .header-sort__title {
             font-size: 14px;
             margin-bottom: 0px;
@@ -317,4 +317,18 @@
             font-size: 16px;
         }
     }
+}
+
+
+.header-sort-close {
+    padding: 5px;
+    display: inline-block;
+    color: $blue;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: #2FFF6A;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    left: 17px;
 }

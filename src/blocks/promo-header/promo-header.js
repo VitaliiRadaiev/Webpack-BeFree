@@ -31,6 +31,7 @@ export function promoHeaderShowHideFilterHandler(homeMap) {
     if(promoHeader) {
         let searchInput = promoHeader.querySelector('.promo-header-search__input');
         let headerSortBlock = promoHeader.querySelector('.header-sort-wrap');
+        let btnClose = promoHeader.querySelector('.header-sort-close');
 
         searchInput.addEventListener('focus', () => {
             if(!headerSortBlock.classList.contains('open')) {
@@ -40,12 +41,12 @@ export function promoHeaderShowHideFilterHandler(homeMap) {
             }
         })
 
-        searchInput.addEventListener('blur', (e) => {
-            if(!e.target.value.trim()) {
+        btnClose.addEventListener('click', (e) => {
+
                 _slideUp(headerSortBlock);
                 homeMap.hide();
                 headerSortBlock.classList.remove('open');
-            }
+            
         })
     }
 }
